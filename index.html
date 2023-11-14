@@ -1,0 +1,1835 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1," />
+    <meta name="description" content="" />
+    <meta name="author" content="Ali Ezz" />
+    
+    <title>C Ali Ezz </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="images/logo-b.png" />
+    <!-- Font Awesome icons (free version)-->
+    <!-- !! No need <link href="/libs/icons/fa-6/all.min.css" rel="stylesheet"> !! No need -->
+    <script src="libs/icons/fa-6/all.js"></script>
+
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="libs/AOS/aos.css">
+
+    <!--  CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            scroll-behavior: smooth
+        }
+
+
+      
+       
+        #mainNav .dropdown-toggle::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            width: 40%;
+            height: 4px;
+            border-radius: 10px;
+            background-color: #ffc600;
+            transition: all .5s;
+            transform-origin: left;
+            transform: scale(0);
+        }
+        #mainNav .dropdown-toggle.active::after, #mainNav .dropdown-toggle:hover::after {
+            transform: scale(1);
+        }
+
+       
+        .dropdown-toggle {
+            font-size: .95rem;
+            color: #fff;
+            letter-spacing: 1px;
+            position: relative;
+            display: block;
+            padding: .5rem 1rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            text-decoration: none;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+        }
+        @media (max-width: 500px) {
+            .dropdown-toggle {
+                color: #fff;
+                padding-left: 0
+            }
+        }
+            .dropdown-toggle:hover {
+                color: #ffc600;
+            }
+        .dropdown-item {
+            
+            padding: 0.6rem 1rem;
+            
+        }
+    </style>
+
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '331881462522886');
+        fbq('track', 'PageView');
+        fbq('track', 'Purchase', { value: 0.00, currency: 'USD' });
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=331881462522886&ev=PageView&noscript=1" />
+    </noscript>
+
+
+  
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+
+            <!-- 
+            <a class="navbar-brand" href="index.html#page-top">
+                <img src="images/aliezzlogo.png" style="transform: scale(1.7);" alt="logo" />
+            </a>
+            -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+
+
+
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2" href="index.html#packages">Packages</a>
+                    </li>
+                    <!-- 
+
+                                      <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2" href="index.html#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2"
+                           href="index.html#transformation">transformation</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="bg-transparent border-0  dropdown-toggle text-capitalize fw-normal fm-pop" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                            <span style="margin-inline-start:5px" class="fa fa-chevron-down"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="Asem/Workouts.html">
+                                    Workouts
+                                </a>
+                            </li>
+
+                              -->
+
+                            <!-- 
+                            <li>
+                                <a class="dropdown-item" href="index.html#faq-sec">
+                                    FAQs
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="Asem/Recipes.html">
+                                    Recipes
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Asem/Substitutions.html">
+                                    Substitution
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                                               -->
+
+                    <li class="nav-item"><a class="nav-link text-capitalize fw-normal fm-pop" href="index.html#Faqsec">FAQs</a></li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2" href="index.html#contactme">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+
+
+<style>
+    @supports (-webkit-overflow-scrolling: touch) {
+        body *: {
+            background-attachment: scroll;
+        }
+    }
+
+    #FAQs .imgo-3 {
+        bottom: 0;
+        right: 0;
+    }
+    #FAQs {
+        padding-top: 150px;
+        padding-bottom: 150px;
+      
+    }
+
+    @media (min-width: 768px){
+        #FAQs {
+ 
+            min-height: 900px;
+        }
+
+        header.masthead {
+            padding-top: 9rem;
+            padding-bottom: 12.5rem;
+        }
+    }
+    #you-have {
+        background-size: 100%;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        background-origin: border-box;
+        background-position: center;
+    }
+
+    .calc-btn {
+        box-shadow: 0 0 6px 3px #848484;
+    }
+    #you-have {
+        background-size: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    #packages {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    @media (max-width: 500px){
+        #you-have {
+            background: #000;
+            background-size: 500px 100%;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #packages {
+            background: #000;
+            background-size: 500px 100%;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #transformation {
+      
+            background: #000;
+        }
+
+    }
+    #packages .item .item-head::after {
+        display: none;
+    }
+
+    #packages .item .item-head.spec {
+        margin-top: 0;
+    }
+
+    #features .content.reverse-feature .img2 {
+        right: 0;
+        left: auto;
+    }
+
+    #features .content.reverse-feature .features-swiper {
+        margin-right: auto;
+        margin-left: 60px;
+    }
+
+    .spinner-wrapper {
+        position: fixed;
+        display: flex;
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        font-size: 30px;
+        left: 0;
+        background: #000;
+        color: #fff
+    }
+
+    header.masthead {
+        background-image: url("images/c.jpg");
+    }
+
+    @media (max-width: 768px) {
+
+        header.masthead {
+            background-position: -789px;
+        }
+    }
+
+    #packages .item:hover p,
+    #packages .item:hover p {
+        opacity: 1 !important;
+    }
+</style>
+
+
+<div style="display: none" id="spinner" class="spinner-wrapper">
+    <div class="text-center">
+        <span class="fa fa-spinner fa-spin"></span>
+        <p >
+            Loading...
+        </p>
+    </div>
+</div>
+
+<!-- 
+<div class="container" id="newhead"> 
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+
+
+    <h2 class="text-start text-light display-2 text-uppercase fw-normal mb-1" data-aos="fade-up"
+    data-aos-duration="1600">
+    The <span class="text-primary" data-aos="fade-up" data-aos-duration="1800">Definitive</span> Detailed
+    <br>Roadmap for Achieving a
+    <span class="d-block text-primary mt-md-1" data-aos="fade-up"
+          data-aos-duration="2000">Toned Physique</span>
+</h2>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<style>
+
+#newhead{height: 500px; background-image: url(images/c.jpg);}
+
+
+</style>
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Masthead-->
+<header class="masthead" id="headmasthead">
+    <div class="container ps-2 ps-md-0">
+        <h2 class="text-start text-light display-2 text-uppercase fw-normal mb-1" data-aos="fade-up"
+            data-aos-duration="1600">
+            The <span class="text-primary" data-aos="fade-up" data-aos-duration="1800">Definitive</span> Detailed
+            <br>Roadmap for Achieving a
+            <span class="d-block text-primary mt-md-1" data-aos="fade-up"
+                  data-aos-duration="2000">Toned Physique</span>
+        </h2>
+        <!-- 
+        <h3 class="text-start text-light display-4 text-uppercase fw-normal mb-1 mb-md-2" data-aos="fade-up"
+            data-aos-duration="200">
+            No more second
+            <br>guessing !
+        </h3>
+        -->
+        <div class="btn-mashead">
+            <a href="index.html#packages" class="btn btn-light btn-lg px-1 text-uppercase" data-aos="fade-up" data-aos-duration="200"
+                    data-aos-delay="200">
+                Start NOW
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- 
+<header class="masthead" id="masthead-phone">
+    <div class="container ps-2 ps-md-0">
+        <h2 class="text-start text-light display-2 text-uppercase fw-normal mb-1" data-aos="fade-up"
+            data-aos-duration="1600">
+            The <span class="text-primary" data-aos="fade-up" data-aos-duration="1800">Definitive</span> Detailed
+            <br>Roadmap for Achieving a
+            <span class="d-block text-primary mt-md-1" data-aos="fade-up"
+                  data-aos-duration="2000">Toned Physique</span>
+        </h2>
+        <div class="btn-mashead">
+            <a href="index.html#packages" class="btn btn-light btn-lg px-1 text-uppercase" data-aos="fade-up" data-aos-duration="200"
+                    data-aos-delay="200">
+                Start NOW
+            </a>
+        </div>
+    </div>
+</header>
+
+-->
+
+
+
+
+    <!-- transformation -->
+    <section class="page-section" id="transformation">
+        <div class="container">
+            <h2 class="display-3 text-uppercase text-light" data-aos="fade-right" data-aos-duration="200">transformation</h2>
+        </div>
+        <div class="container">
+
+            <div class="swiper transo-swiper-1 d-none d-md-block " data-aos="fade-up" data-aos-duration=".8s">
+                <div class="swiper-wrapper">
+                            <div class="swiper-slide" >
+                                <img loading="lazy" src="images/transf.jpg"  alt="trans" class="" style="height: 200px;width: auto;object-fit: cover; width:87%; filter: blur(3px);" >
+                            </div>
+                            <div class="swiper-slide" >
+                                <img loading="lazy" src="images/transf.jpg"  alt="trans" class="" style="height: 200px;width: auto;object-fit: cover; width:87%; filter: blur(3px);" >
+                            </div>
+                            <div class="swiper-slide" >
+                                <img loading="lazy" src="images/transf.jpg"  alt="trans" class="" style="height: 200px;width: auto;object-fit: cover; width:87%; filter: blur(3px);" >
+                            </div>
+                </div>
+            </div>
+
+            <!-- Mobile transforms -->
+            <div class="swiper transo-swiper-mobile d-block d-md-none" data-aos="fade-up" data-aos-duration=".8s">
+                <div class="swiper-wrapper" >
+                        <div class="swiper-slide">
+                            <div class="row g-1 ">
+                                    <div class="col-6" >
+                                        <img loading="lazy" src="images/transf.jpg" class="" alt="trans" >
+                                    </div>
+                                    <div class="col-6" >
+                                        <img loading="lazy" src="images/transf.jpg" class="" alt="trans" >
+                                    </div>
+                                    <div class="col-6" >
+                                        <img loading="lazy" src="images/transf.jpg" class="" alt="trans" >
+                                    </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+
+
+            <div class="container" id="transformation-alert">
+                    <div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+
+
+    <p>   <i class='fas fa-exclamation-circle' style='font-size:48px;color:red'></i>  Transformation images are not shown here to protect client privacy </p> 
+
+</div>
+
+
+                    </div>
+
+                
+            </div>
+
+
+        </div>
+
+
+            <br> <br>
+
+
+
+
+<!-- How it work-->
+<section class="page-section bg-light" id="how-it-work">
+    <div class="container">
+        <h2 class="fw-normal text-uppercase text-dark display-3 mb-2 mb-md-3" 
+            data-aos-duration="200" style="text-align:center!important">
+            OUR PROCESS
+        </h2>
+        <div class="row gy-1 gy-md-3 mx-1 mx-md-3 ">
+            <div class="col-12 col-md-4 d-flex flex-row flex-md-column justify-content-md-center text-start text-md-center"
+                 data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                 <i class="fas fa-edit" style="color: #edd06c; font-size: 40px;"></i>
+                 <br>
+                <span class="text-uppercase" style="font-weight: bolder!important; margin-bottom: 20px!important;">Get Started <br> <p style="font-weight: 400!important; margin-top: 12px;">  Complete the Form and Share Your Pictures. </p> </span>
+            
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-row flex-md-column justify-content-md-center text-start text-md-center"
+                 data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+                 <i class="fas fa-clock" style="color: #edd06c; font-size: 40px;"></i>
+                 <br>
+
+                <span class="text-uppercase" style="font-weight: bolder!important;">Personalized Program <br>  <p style="font-weight: 400!important; margin-top: 12px;">  Sit Back and Await Your Tailored Program. </p> </span>
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-row flex-md-column justify-content-md-center text-start text-md-center"
+                 data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                 <i class="fas fa-question-circle" style="color: #edd06c; font-size: 40px;"></i>
+                 <br>
+                <span class="text-uppercase" style="font-weight: bolder!important;">Support & Questions <br>  <p style="font-weight: 400!important; margin-top: 12px;">  Don't Hesitate to Reach Out with Any Concerns or Questions.                </p> </span>
+
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-row flex-md-column justify-content-md-center text-start text-md-center"
+                 data-aos="fade-up" data-aos-duration="500" data-aos-delay="250" style="margin-top: 25px!important;">
+                 <i class="fas fa-dumbbell" style="color: #edd06c; font-size: 40px;"></i>
+                 <br>
+                <span class="text-uppercase" style="font-weight: bolder!important;">Follow the Plan <br> <p style="font-weight: 400!important; margin-top: 12px;">  Commit to Your Diet and Workout Routine. </p> </span>
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-row flex-md-column justify-content-md-center text-start text-md-center"
+                 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" style="margin-top: 25px!important;">
+                 <i class="fas fa-download" style="color: #edd06c; font-size: 40px;"></i>
+                 <br>
+                <span class="text-uppercase" style="font-weight: bolder!important;">Program Delivery <br>  <p style="font-weight: 400!important; margin-top: 12px;">  Receive Your Customized Program which is created for you.  </p> </span>
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-row flex-md-column justify-content-md-center text-start text-md-center"
+                 data-aos="fade-up" data-aos-duration="500" data-aos-delay="350" style="margin-top: 25px!important;">
+                 <i class="fas fa-chart-line" style="color: #edd06c; font-size: 40px;"></i>
+                 <br>
+                <span class="text-uppercase" style="font-weight: bolder!important;">Transform in 12 Weeks <br> <p style="font-weight: 400!important; margin-top: 12px;">  See Visible Results in short time if you commit.                </p> </span>
+            </div>
+        </div>
+        <p class="d-block d-md-none text-uppercase text-center mt-2">
+            By joining my team you will have the right
+            guidance, gain the knowledge and most importantly unlock the mindset that will streamline your road to
+            results<br>no matter what your goal is.
+        </p>
+    </div>
+</section>
+
+
+
+<div class="container-fluid" style="background-color: #fff;     padding: 54px;
+padding-bottom: 0px!important;" id="tailored-sec">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="images/mealplan.jpg" alt="meal plan" class="img-fluid" style="    padding: 40px;">
+      </div>
+      <div class="col-md-6">
+        <h2 style="margin-top: 108px;
+        text-align: center;">Tailored Nutrition Plans        </h2>
+        <p style="font-size: 20px;
+        font-weight: 500; text-align: center;">Our meal plans are tailored to your unique goals, schedule, and lifestyle. They evolve with your progress, offering options such as Balanced, Carb Cycling, and Advanced diets. Your journey to a healthier you begins here.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <div class="container-fluid" style="background-color: #fff;     padding: 54px;
+  padding-bottom: 0px!important; padding-top: 0px;" id="customized-sec">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 style="margin-top: 108px;
+          text-align: center;">Customized Exercise Plan </h2>
+          <p style="font-size: 20px;
+          font-weight: 500; text-align: center;">A personalized workout program tailored exclusively to you! I'll create an ongoing training plan that's uniquely designed to match your fitness goals. You'll also find video demonstrations for each exercise to ensure proper execution.
+          </p>
+        </div>
+
+        <div class="col-md-6">
+            <img src="images/workoutplan.jpg" alt="meal plan" class="img-fluid" style="    padding: 40px;">
+          </div>
+  
+      </div>
+    </div>
+    
+  
+<!-- 
+    <div class="container-fluid" style="background-color: #f5f5f5; padding: 54px; padding-bottom: 0px!important; padding-top: 0px;" id="personalized-sec">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/fitnessroutine.jpg" alt="workout plan" class="img-fluid" style="padding: 40px;">
+          </div>
+          <div class="col-md-6">
+            <h2 style="margin-top: 108px; text-align: center;">Personalized Fitness Routines</h2>
+            <p style="font-size: 20px; font-weight: 500; text-align: center;">Our fitness routines are crafted to meet your unique fitness goals, schedule, and lifestyle. From strength training to cardio workouts, our personalized plans cater to your specific needs. Start your fitness journey with us today.</p>
+          </div>
+        </div>
+      </div>
+      
+-->
+
+<!-- 
+<section class="py-2 bg-dark">
+    <p class="text-primary fw-normal text-center text-uppercase" style="letter-spacing: 4px !important">
+        Sponsored by
+    </p>
+
+
+    <div class="container">
+        <div class="row row-cols-2 align-items-center row-cols-lg-3 g-2 justify-content-center">
+                <div class="col text-center">
+                    <img loading="lazy" style="max-width: 200px" src="images/3267ee98-8da5-4cd9-b364-129d169fd61b1.png" class=" w-100" />
+                </div>
+                <div class="col text-center">
+                    <img loading="lazy" style="max-width: 200px" src="images/bdda00ba-bb22-4f0d-babf-475e29a500942.png" class=" w-100" />
+                </div>
+                <div class="col text-center">
+                    <img loading="lazy" style="max-width: 200px" src="images/a06cbd2f-5dd9-462e-b8e4-00818dcc80b33.png" class=" w-100" />
+                </div>
+                <div class="col text-center">
+                    <img loading="lazy" style="max-width: 200px" src="images/655db424-af61-47cb-919d-9bcd899881d44.png" class=" w-100" />
+                </div>
+                <div class="col text-center">
+                    <img loading="lazy" style="max-width: 200px" src="images/fe45f147-059a-4901-8b9f-e43ae6a328e75.png" class=" w-100" />
+                </div>
+                <div class="col text-center">
+                    <img loading="lazy" style="max-width: 200px" src="images/17661a39-f24d-4ed1-ae85-911e95fdcf806.png" class=" w-100" />
+                </div>
+                <div class="col text-center">
+                    <img loading="lazy" style="max-width: 200px" src="images/ad2acb41-f106-479c-9b66-c2113770b5177.png" class=" w-100" />
+                </div>
+                <div class="col text-center">
+                    <img loading="lazy" style="max-width: 200px" src="images/eb8f8bea-da49-40f8-8a77-247592f6fea58.png" class=" w-100" />
+                </div>
+                <div class="col text-center">
+                    <img loading="lazy" style="max-width: 200px" src="images/ebd5a02f-633f-4851-a3cf-a6f7bb6544fbPp.png" class=" w-100" />
+                </div>
+
+
+        </div>
+    </div>
+</section>
+
+-->
+<!--
+
+<section class="page-section position-relative" id="you-have">
+    <img loading="lazy" src="images/you-have-bg.png" class="position-absolute translate-middle d-none d-md-block" alt="background-image">
+    <div class="container">
+        <h2 class="text-start text-uppercase text-light display-1 fw-normal mb-4" data-aos="fade-right"
+            data-aos-duration="200" data-aos-delay="200">
+            DO YOU EVER FEEL LIKE<br>YOU HAVE
+            A...
+        </h2>
+        <div class="items">
+            <div class="mb-2">
+                <h3 class="display-3 text-uppercase text-start fw-normal mb-1 text-light" data-aos="fade-up"
+                    data-aos-duration="500" data-aos-delay="50">
+                    LACK OF <span class="text-primary">KNOWLEDGE</span>:
+                </h3>
+                <p class="text-light" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="250">
+                    So many
+                    people come to me without a clue what to do, or worse, with WRONG, and
+                    often dangerous, ideas as to how <br>to get healthy. Don’t feel ashamed! I was there too. I did
+                    the heavy lifting for you.<br>I did the years of study and trial and error so you don’t have to!
+                </p>
+            </div>
+            <div class="mb-2">
+                <h3 class="display-3 text-uppercase text-start fw-normal mb-1 text-light" data-aos="fade-up"
+                    data-aos-duration="500" data-aos-delay="50">
+                    LACK OF <span class="text-primary">CONFIDENCE</span>:
+                </h3>
+                <p class="text-light" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="250">
+                    So many
+                    people lack the confidence & belief that they can actually make a
+                    change. It’s totally normal.<br>My FAVOURITE part of my job is seeing the look on my clients'
+                    faces when they start to see<br>REAL changes in their bodies!
+                </p>
+            </div>
+            <div class="mb-2">
+                <h3 class="display-3 text-uppercase text-start fw-normal mb-1 text-light " data-aos="fade-up"
+                    data-aos-duration="500" data-aos-delay="50">
+                    PLATEAU YOU’VE
+                    BEEN<br><span class="text-primary">STUCK</span> AT:
+                </h3>
+                <p class="text-light" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="250">
+                    things
+                    when people just “start working out” but often, people will hit a
+                    plateau because they don’t know enough about fitness, their bodies, or about nutrition to push
+                    past that ceiling.<br>That’s where I come into it! I’ll help you get past your old sticking
+                    points so you can see real change in no time!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+
+
+
+<section id="startnow" style="padding: 0px!important;">
+
+<div class="container-fluid" style="height: 600px; background-image: url('images/cs.jpg');     background-repeat: no-repeat;
+background-size: cover; box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 60%);">
+
+<h2 class="text-light text-center text-md-start text-uppercase display-1 fw-normal position-relative z-1"
+data-aos="fade-right" data-aos-duration="200" data-aos-delay="200" style="    padding-top: 110px;
+padding-left: 60px; margin-bottom: 10px;">
+No More Time To Wait 
+</h2>
+
+<p style="color: white;
+font-size: 30px;
+font-weight: 600;
+padding-left: 60px;"> Start Yor Journey Now! </p>
+
+<a href="index.html#offers" class="btn btn-light btn-lg px-2 text-uppercase position-relative z-1 mx-auto m-md-0 botto"
+data-aos="fade-up" data-aos-duration="200" data-aos-delay="300" style="margin-left: 60px!important;     margin-top: 20px!important;">
+ get started
+</a>
+
+</div>
+
+</section>
+
+
+<!-- packages -->
+<section class="page-section position-relative" id="packages">
+    <!--
+    <img src="images/start.jpg" class="position-absolute translate-middle z-0 d-none d-md-inline-block" alt="start now background">
+    <div class="container">
+        <h2 class="text-light text-center text-md-start text-uppercase display-1 fw-normal mb-2 position-relative z-1"
+            data-aos="fade-right" data-aos-duration="200" data-aos-delay="200">
+            START NOW<br>& GET
+            <span class="text-primary">Alphaized</span>
+        </h2>
+        <a href="index.html#offers" class="btn btn-light btn-lg px-2 text-uppercase position-relative z-1 mx-auto m-md-0 botto"
+           data-aos="fade-up" data-aos-duration="200" data-aos-delay="300">
+            get started
+        </a>
+         -->
+        <div class="position-relative z-1">
+            <h3 class="text-uppercase text-light display-3 mb-2 mb-md-2" data-aos="fade-right" data-aos-duration="200" style="text-align: center;">
+                PACKAGES
+            </h3>
+            <div id="offers" class="row gx-2 justify-content-center items-con">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-1 mb-md-0 p-0 p-md-1">
+                    <div class="item p-1 position-relative" data-aos="fade-up" data-aos-duration="200">
+                        <button class="btn text-capitalize text-primary rounded-pill fm-pop"
+                                style="background-color: rgba(119, 119, 119, 0.222);">
+                            Basic
+                        </button>
+                        <div class="item-head text-center mt-2 position-relative">
+                            <h4 class="text-primary egpView fm-pop">
+                                700.00 <small class="text-light ml-1 fw-normal">EGP</small>
+                            </h4>
+                            <h4 class="text-primary usdView fm-pop">
+                                700.00 <small class="text-light ml-1 fw-normal">EGP</small>
+                            </h4>
+                        </div>
+                        <small class="text-light " style="text-align: center; justify-content: center; margin: auto; display: table;">1 MONTH </small>
+                        <ul class="mt-1"> 
+                                <li class="text-uppercase fm-pop">
+                                    &#xD;&#xA;                      Workout Plans: Personalized fitness routines complete ( Media Included : Videos, Photos) &#xD;&#xA;                            
+                                </li>
+                                <li class="text-uppercase fm-pop">
+                                    Core and Cardio Workouts: Effective routines to boost your cardiovascular health and strengthen your core. &#xD;&#xA;
+                                </li>
+                                <li class="text-uppercase fm-pop">
+                                    Flexible Dietary Guidance: A fully customizable diet plan that adapts to your food preferences. &#xD;&#xA;
+                                </li>
+                                <li class="text-uppercase fm-pop">
+                                    Supplement Recommendations: Expert advice on supplements and recommended dosages. &#xD;&#xA;
+                                </li>
+                                <li class="text-uppercase fm-pop">
+                                    FAQ Support: Answers to common questions to keep you on track. &#xD;&#xA;
+                                </li>
+                         
+
+
+
+                        </ul>
+                        <a class="btn btn-primary btn-lg text-uppercase egpView text-light position-absolute mb-0  "
+                           style="width: 80%; bottom: 30px;left: 30px;font-size: 16px;" href="Asem/PackageSelected@curency=EGP&amp;Id=2.html">
+                            Start 
+                        </a>
+                        <a class="btn btn-primary btn-lg text-uppercase usdView text-light position-absolute mb-0  "
+                           style="width: 80%; bottom: 30px;left: 30px;font-size: 16px;" href="Asem/PackageSelected@curency=USD&amp;Id=2.html">
+                           Start
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-1 mb-md-0 p-0 p-md-1">
+                    <div class="item p-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+                        <button class="btn text-capitalize text-primary rounded-pill fm-pop"
+                                style="background-color: rgba(119, 119, 119, 0.222);">
+                            Premium
+                        </button>
+                        <div class="item-head">
+                            <div class="text-center">
+                                <div class="item-head spec text-center mb-0">
+                                    <h4 class="text-primary lh-sm egpView fm-pop">
+                                        1300.00 <small class="text-light ml-1 fw-normal">EGP</small>
+                                    </h4>
+                                    <h4 class="text-primary usdView fm-pop">
+                                        700.00 <small class="text-light ml-1 fw-normal">EGP</small>
+                                    </h4>
+                                            <small class="text-light ">3 MONTHS</small>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <ul class="mt-1">
+                            <li class="text-uppercase fm-pop">
+                                &#xD;&#xA;                      Workout Plans: Personalized fitness routines complete ( Media Included : Videos, Photos) &#xD;&#xA;                            
+                            </li>
+                            <li class="text-uppercase fm-pop">
+                                Core and Cardio Workouts: Effective routines to boost your cardiovascular health and strengthen your core. &#xD;&#xA;
+                            </li>
+                            <li class="text-uppercase fm-pop">
+                                Flexible Dietary Guidance: A fully customizable diet plan that adapts to your food preferences. &#xD;&#xA;
+                            </li>
+                            <li class="text-uppercase fm-pop">
+                                Supplement Recommendations: Expert advice on supplements and recommended dosages. &#xD;&#xA;
+                            </li>
+                            <li class="text-uppercase fm-pop">
+                                FAQ Support: Answers to common questions to keep you on track. &#xD;&#xA;
+                            </li>
+
+
+                        </ul>
+                        <a class="btn btn-primary btn-lg text-uppercase egpView text-light position-absolute mb-0  "
+                           style="width: 80%; bottom: 30px;left: 30px;font-size: 16px;" href="Asem/PackageSelected@curency=EGP&amp;Id=4.html">
+                           Start
+                        </a>
+                        <a class="btn btn-primary btn-lg text-uppercase usdView text-light position-absolute mb-0  "
+                           style="width: 80%; bottom: 30px;left: 30px;font-size: 16px;" href="Asem/PackageSelected@curency=USD&amp;Id=4.html">
+                           Start
+                        </a>
+
+                    </div>
+                </div>
+             <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-1 mb-md-0 p-0 p-md-1">
+                 <div class="item p-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+                     <button class="btn text-capitalize text-primary rounded-pill fm-pop"
+                             style="background-color: rgba(119, 119, 119, 0.222);">
+                         Gold
+                     </button>
+                     <div class="item-head">
+
+                         <div class="text-center">
+                             <div class="item-head spec text-center">
+                                <h4 class="text-primary lh-sm egpView fm-pop">
+                                    2000.00 <small class="text-light ml-1 fw-normal">EGP</small>
+                                </h4>
+                                <h4 class="text-primary usdView fm-pop">
+                                    2000.00 <small class="text-light ml-1 fw-normal">EGP</small>
+                                </h4>
+                                 <small class="text-light ">6 MONTHS</small>
+                             </div>
+                         </div>
+                     </div>
+                     <ul class="mt-1">
+                        <li class="text-uppercase fm-pop">
+                            &#xD;&#xA;                      Workout Plans: Personalized fitness routines complete ( Media Included : Videos, Photos) &#xD;&#xA;                            
+                        </li>
+                        <li class="text-uppercase fm-pop">
+                            Core and Cardio Workouts: Effective routines to boost your cardiovascular health and strengthen your core. &#xD;&#xA;
+                        </li>
+                        <li class="text-uppercase fm-pop">
+                            Flexible Dietary Guidance: A fully customizable diet plan that adapts to your food preferences. &#xD;&#xA;
+                        </li>
+                        <li class="text-uppercase fm-pop">
+                            Supplement Recommendations: Expert advice on supplements and recommended dosages. &#xD;&#xA;
+                        </li>
+                        <li class="text-uppercase fm-pop">
+                            FAQ Support: Answers to common questions to keep you on track. &#xD;&#xA;
+                        </li>
+                 
+
+                     </ul>
+
+                     <a class="btn btn-primary btn-lg text-uppercase egpView text-light position-absolute mb-0  "
+                        style="width: 80%; bottom: 30px;left: 30px;font-size: 16px;" href="Asem/PackageSelected@curency=EGP&amp;Id=5.html">
+                        Start
+                     </a>
+                     <a class="btn btn-primary btn-lg text-uppercase usdView text-light position-absolute mb-0  "
+                        style="width: 80%; bottom: 30px;left: 30px;font-size: 16px;" href="Asem/PackageSelected@curency=USD&amp;Id=5.html">
+                        Start
+                     </a>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!-- features-->
+    <!--
+    <section class="page-section position-relative" id="features">
+        <img src="images/features-bg.png" class="position-absolute img1 top-50 start-50 translate-middle" alt="background">
+        <div class="container">
+                <div class="content bg-light mb-5  p-3 d-none d-lg-flex">
+                        <img src="images/mealplan.jpg" class="position-absolute img2" alt="tel" data-aos="fade-right" data-aos-duration="500">
+
+
+                    <div class=" features-swiper">
+
+                        <div class="slide fm-pop">
+                            <h3 data-aos="fade-left" data-aos-duration="500">
+                                Tailored Nutrition Plans
+                            </h3>
+                            <p data-aos="fade-left" data-aos-duration="500">
+                                Fully customised training &amp; meal&#xD;&#xA;                    plans&#xD;&#xA;                    customised to YOU &amp; YOURgoals as well&#xD;&#xA;                    as your schedule and lifestyle which will&#xD;&#xA;                    be updated basedon your progress.&#xD;&#xA;                    Choose from Balanced, Carbcycling,&#xD;&#xA;                    and Advanced diets!
+                            </p>
+                        </div>
+
+
+                        <div class="">
+
+
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="content bg-light mb-5 reverse-feature p-3 d-none d-lg-flex">
+                        <img src="images/tel(1).png" class="position-absolute img2" alt="tel" data-aos="fade-right" data-aos-duration="500">
+
+
+                    <div class=" features-swiper">
+
+                        <div class="slide fm-pop">
+                            <h3 data-aos="fade-left" data-aos-duration="500">
+                                Personalised WORKOUT PROGRAM
+                            </h3>
+                            <p data-aos="fade-left" data-aos-duration="500">
+                                Workout program just for you! I will customise your own ongoing training&#xD;&#xA;program. All exercises have been filmed to demonstrate how to perform&#xD;&#xA;them correctly.
+                            </p>
+                        </div>
+
+
+                        <div class="">
+
+
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="content bg-light mb-5  p-3 d-none d-lg-flex">
+                        <img src="images/tel(2).png" class="position-absolute img2" alt="tel" data-aos="fade-right" data-aos-duration="500">
+
+
+                    <div class=" features-swiper">
+
+                        <div class="slide fm-pop">
+                            <h3 data-aos="fade-left" data-aos-duration="500">
+                                HOME OR GYM WORKOUTS
+                            </h3>
+                            <p data-aos="fade-left" data-aos-duration="500">
+                                Workout wherever is most convenient for you with home or gym workout&#xD;&#xA;options!
+                            </p>
+                        </div>
+
+
+                        <div class="">
+
+
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            <div class="content-mobile d-block d-lg-none">
+                    <div class="feato bg-light" data-aos="fade-left" data-aos-duration="700">
+                            <img src="images/tel.png" class="" alt="tel">
+                        <h3 > Personalized MEAL PLAN</h3>
+                        <p >
+                            Fully customised training &amp; meal&#xD;&#xA;                    plans&#xD;&#xA;                    customised to YOU &amp; YOURgoals as well&#xD;&#xA;                    as your schedule and lifestyle which will&#xD;&#xA;                    be updated basedon your progress.&#xD;&#xA;                    Choose from Balanced, Carbcycling,&#xD;&#xA;                    and Advanced diets!
+                        </p>
+                    </div>
+                    <div class="feato bg-light" data-aos="fade-right" data-aos-duration="700">
+                            <img src="images/tel(1).png" class="" alt="tel">
+                        <h3 > Personalised WORKOUT PROGRAM</h3>
+                        <p >
+                            Workout program just for you! I will customise your own ongoing training&#xD;&#xA;program. All exercises have been filmed to demonstrate how to perform&#xD;&#xA;them correctly.
+                        </p>
+                    </div>
+                    <div class="feato bg-light" data-aos="fade-left" data-aos-duration="700">
+                            <img src="images/tel(2).png" class="" alt="tel">
+                        <h3 > HOME OR GYM WORKOUTS</h3>
+                        <p >
+                            Workout wherever is most convenient for you with home or gym workout&#xD;&#xA;options!
+                        </p>
+                    </div>
+
+
+            </div>
+        </div>
+    </section>
+-->
+
+
+                      <!--    
+
+            <h4 class="text-uppercase text-light mt-3 display-1 d-block d-md-none" data-aos="fade-right"
+                data-aos-duration="200">
+                if you can't
+                <br><span class="text-primary">beat</span> alpha
+                <br><span class="text-primary">join</span> alpha
+            </h4>
+        </div>
+    </section>
+-->   
+    <div class="container-fluid p-0" id="contactme">
+        <div class="row m-0">
+          <div class="col-12 p-0">
+            <div class="overlay-section" style="background-image: url('images/cta.jpg');" id="cta-sec">
+              <div class="overlay"></div>
+              <div class="content">
+                <h2 id="section-heading">Contact Your Coach</h2>
+                <p id="section-content">Ready to start your fitness journey? Get in touch with your personal coach today. Whether you're aiming to lose weight, build muscle, or improve your overall well-being, we're here to guide you. We offer tailored workout programs and nutrition plans to help you achieve your goals.</p>
+          
+                <a href="contact.html" class="btn btn-info" role="button" style="background-color: #edd06c!important; color: white;
+                font-weight: 600;
+                padding: 11px;">Contact ME</a>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+<div class="fluid-container" id="contact-phone">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="overlay-section" style="background-image: url('images/cta.jpg');" >
+        <div class="overlay"></div>
+        <div class="content">
+          <h2>Contact Your Coach</h2>
+          <p >Ready to start your fitness journey? Get in touch with your personal coach today. Whether you're aiming to lose weight, build muscle, or improve your overall well-being, we're here to guide you. We offer tailored workout programs and nutrition plans to help you achieve your goals.</p>
+
+          <a href="contact.html" class="btn btn-info" role="button" style="background-color: #edd06c!important; color: white;
+          font-weight: 600;
+          padding: 11px;">Contact ME</a>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<style>
+
+#cta-sec.overlay-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 90vh; /* Adjust the height as needed */
+}
+
+#cta-sec .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+}
+
+#cta-sec .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Text color */
+  z-index: 1;
+}
+
+#cta-sec .content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#cta-sec .content p {
+  font-size: 20px; font-weight: 500;
+}
+
+
+</style>
+
+
+
+<!-- CTA-->
+<!-- 
+<section class="bg-white py-3 py-md-4">
+    <div class="container ">
+        <h3 class="text-uppercase text-center mx-auto mb-0" style="max-width:600px">
+            BY JOINING MY TEAM YOU WILL HAVE THE RIGHT GUIDANESS, GAIN THE KNOWLEDGE AND MOST IMPORTANTLY UNLOCK THE MINDSET THAT WILL STREAMLINE YOUR ROAD TO RESULTS NO MATTER WHAT YOUR GOAL IS.
+        </h3>
+
+    </div>
+</section>
+-->
+
+</div>
+</div>
+    </section>
+<!-- new FAQ section -->
+
+<div class="faq-section" id="Faqsec">
+    <div class="faq-container">
+        <h2>FAQ</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="faq-item">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                            Can I book a single coaching session, or do I need to commit to a package?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You have the flexibility to book a single session or opt for a coaching package, depending on your preferences and goals.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading2">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            What are the payment options available for coaching sessions?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We accept various payment methods, including credit/debit cards and online payment platforms. You can choose the payment method that suits you best.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading2">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            What is your cancellation policy for coaching sessions?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We have a cancellation policy that allows you to reschedule or cancel a session with a certain notice period. Please refer to our policy page for details.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+    
+
+
+
+
+
+
+
+
+<!-- FAQs -->
+<!-- 
+<section class="page-section position-relative" id="FAQs">
+    <img loading="lazy" src="images/faq.jpg" class="position-absolute imgo-1 z-1 d-none d-lg-inline-block" alt="background">
+    <img loading="lazy" src="images/endo.svg" class="position-absolute imgo-2 z-0 d-none d-lg-inline-block" alt="background">
+    <img loading="lazy" src="images/mobile-FAQs-bg.png" class="position-absolute imgo-3 z-0 d-inline-block d-lg-none" alt="background">
+    <div class="container">
+        <h2 class="text-dark text-uppercase display-3 mb-3 hedo" data-aos="fade-right" data-aos-duration="200">
+            FAQ
+        </h2>
+        <div class="accordion position-relative" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-0">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-0"
+                                aria-expanded="false" aria-controls="collapseOne" data-aos="fade-right"
+                                data-aos-duration="200">
+                            How do I receive the program?
+                        </button>
+                    </h2>
+                    <div id="collapse-0" class="accordion-collapse collapse show" aria-labelledby="heading-0"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body" data-aos="fade-up" data-aos-duration="200">
+                            Your program will appear in your Get Alphaized account within 7-10 days after purchase
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1"
+                                aria-expanded="false" aria-controls="collapseOne" data-aos="fade-right"
+                                data-aos-duration="200">
+                            Are the programs available world wide?
+                        </button>
+                    </h2>
+                    <div id="collapse-1" class="accordion-collapse collapse " aria-labelledby="heading-1"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body" data-aos="fade-up" data-aos-duration="200">
+                            Yes! It&#x2019;s imperative to me that anyone in the world can access this program.&#xD;&#xA;
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2"
+                                aria-expanded="false" aria-controls="collapseOne" data-aos="fade-right"
+                                data-aos-duration="200">
+                            Do I need a gym?&#xD;&#xA;
+                        </button>
+                    </h2>
+                    <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body" data-aos="fade-up" data-aos-duration="200">
+                            Not at all, if you have one, or access to equipment, great. If you don&#x2019;t then we&#x2019;ll make you a home based plan using what you have, or even just bodyweight.&#xD;&#xA;
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3"
+                                aria-expanded="false" aria-controls="collapseOne" data-aos="fade-right"
+                                data-aos-duration="200">
+                            I&#x2019;m new to the gym - is this good for beginner?&#x9;&#xD;&#xA;
+                        </button>
+                    </h2>
+                    <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body" data-aos="fade-up" data-aos-duration="200">
+                            The workout is entirely tailored to you and your goals. So if you are new to the gym I&#x2019;ve got your back with your very own personalised program. Choose weights that are light for your fitness levels and gradually work your way up.&#x2028;
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4"
+                                aria-expanded="false" aria-controls="collapseOne" data-aos="fade-right"
+                                data-aos-duration="200">
+                            Am I obligated to eat certain foods?
+                        </button>
+                    </h2>
+                    <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body" data-aos="fade-up" data-aos-duration="200">
+                            Of course no, each food and item is selected by you from the survey; confirmed and listed in the plan by Me. You can also substitute any foods in your Get Alphaized account&#xD;&#xA;
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5"
+                                aria-expanded="false" aria-controls="collapseOne" data-aos="fade-right"
+                                data-aos-duration="200">
+                            Is each month the same?&#xD;&#xA;
+                        </button>
+                    </h2>
+                    <div id="collapse-5" class="accordion-collapse collapse " aria-labelledby="heading-5"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body" data-aos="fade-up" data-aos-duration="200">
+                            It all depends on your progress, I may change the plan daily if we need&#xD;&#xA;
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6"
+                                aria-expanded="false" aria-controls="collapseOne" data-aos="fade-right"
+                                data-aos-duration="200">
+                            How Many Days A Week Will I Train?&#xD;&#xA;
+                        </button>
+                    </h2>
+                    <div id="collapse-6" class="accordion-collapse collapse " aria-labelledby="heading-6"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body" data-aos="fade-up" data-aos-duration="200">
+                            That totally depends on you, the time you have available and your goals. We&#x2019;d recommend you need at least 30 minutes, 3 times a week as a bare minimum to get results.&#xD;&#xA;
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-7">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7"
+                                aria-expanded="false" aria-controls="collapseOne" data-aos="fade-right"
+                                data-aos-duration="200">
+                            Will I have to train for hours?&#xD;&#xA;
+                        </button>
+                    </h2>
+                    <div id="collapse-7" class="accordion-collapse collapse " aria-labelledby="heading-7"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body" data-aos="fade-up" data-aos-duration="200">
+                            Not at all. We know time is precious, so are results, so we can focus on fast yet effective training.&#xD;&#xA;
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-8">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8"
+                                aria-expanded="false" aria-controls="collapseOne" data-aos="fade-right"
+                                data-aos-duration="200">
+                            How long between signing up and getting started ?&#xD;&#xA;
+                        </button>
+                    </h2>
+                    <div id="collapse-8" class="accordion-collapse collapse " aria-labelledby="heading-8"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body" data-aos="fade-up" data-aos-duration="200">
+                            All the plans are fully customized, 100% genuine, neither replicated nor made with any generic applications. So, we aim to deliver your program within 7-10 working days&#xD;&#xA;
+                        </div>
+                    </div>
+                </div>
+
+          
+        </div>
+    </div>
+</section>
+
+-->
+
+
+
+
+<!-- jquery js -->
+<script src="libs/jquery/jquery-3.6.3.min.js"></script>
+<script>
+    function ipLookUp() {
+        //var country = "";
+        //if (navigator.geolocation) {
+        //    navigator.geolocation.getCurrentPosition(function (position) {
+        //        var latitude = position.coords.latitude;
+        //        var longitude = position.coords.longitude;
+        //        $('#WaitEn').text("Please wait...");
+
+        //        var xhr = new XMLHttpRequest();
+        //        xhr.open("GET", `https://api.bigdatacloud.net/data/reverse-geocode-client?localityLanguage=en`);
+        //        xhr.send();
+        //        xhr.onerror = function () {
+        //            $('#spinner').hide();
+        //            $('.usdView').hide();
+        //        }
+        //        xhr.onabort = function () {
+        //            $('#spinner').hide();
+        //            $('.usdView').hide();
+        //        }
+        //        xhr.ontimeout = function () {
+        //            $('#spinner').hide();
+        //            $('.usdView').hide();
+        //        }
+        //        xhr.onload = function () {
+        //            $('#spinner').hide();
+
+        //            if (xhr.status === 200) {
+        //                var response = JSON.parse(xhr.responseText);
+        //                country = response.countryName;
+        //                if (country.includes("Egypt")) {
+        //                    $('.usdView').hide();
+
+        //                } else {
+        //                    $('.egpView').hide();
+        //                }
+        //            }
+        //        }
+        //    }, function (error) {
+        //        $('#spinner').hide();
+        //        $('.usdView').hide();
+
+        //    }, { timeout: 10000 });
+        //} else {
+        //    $('#spinner').hide();
+        //    $('.usdView').hide();
+
+        //}
+        $('#spinner').show();
+        $.ajax({
+            url: "https://api.ipgeolocation.io/ipgeo?apiKey=418b22cc8f7447a6945ec8329f7bdabd",
+            timeout: 3000, // Timeout in milliseconds (4 seconds)
+            dataType: "json",
+            success: function (res) {
+                if (res?.country_name?.includes("Egypt")) {
+                    $('.usdView').hide();
+                } else {
+                    $('.egpView').hide();
+                }
+                $('#spinner').hide();
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                // Handle error here
+                console.log("Error:", textStatus, errorThrown);
+                $('.egpView').hide();
+                $('#spinner').hide();
+            }
+        });
+
+    }
+
+    ipLookUp();
+</script>
+
+
+
+<!-- Initialize Swiper -->
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- 
+            <div class="text-center">
+                <img src="images/ahmedassemlogo.png" alt="logo" style="width: 130px;padding: 0">
+                <h4 class="text-uppercase mb-0 text-white display-4">AHMED ASEM</h4>
+            </div>
+            -->
+            <!-- 
+            <div class="w-100 mb-1 d-flex justify-content-center align-items-center gap-1 flex-wrap">
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="assets/images/sponsers/1.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="assets/images/sponsers/2.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="assets/images/sponsers/3.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="assets/images/sponsers/4.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="assets/images/sponsers/5.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="assets/images/sponsers/6.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="assets/images/sponsers/7.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="assets/images/sponsers/8.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="assets/images/sponsers/9.png" class="" />
+                    </div>
+
+              
+            </div>
+
+            -->
+<br> <br> 
+            <ul>
+
+                <li class="text-center">
+                    <a class="text-decoration-none" target="_blank" href="#">
+                        <i class="fa-brands fa-facebook i-i"></i>
+                    </a>
+
+                    <a class="text-decoration-none" target="_blank" href="#">
+                        <i class="fa-brands fa-whatsapp i-i"></i>
+                    </a>
+
+                    <a class="text-decoration-none" target="_blank" href="#">
+                        <i class="fa-brands fa-instagram i-i"></i>
+                    </a>
+                    <a class="text-decoration-none" target="_blank" href="#">
+                        <i class="fa-brands fa-youtube i-i"></i>
+                    </a>
+
+
+                </li>
+                <li class="mt-1">
+                    &copy; Copyright 2023 All right reserved.<br>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- jquery js -->
+    <!--<script src="~/lib/jquery/jquery-3.6.3.min.js"></script>-->
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="libs/bs-5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Core theme JS-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- AOS JS -->
+    <script src="libs/AOS/aos.js"></script>
+    <script>AOS.init(
+    {
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 50, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+
+
+    }    );</script>
+
+    <!-- swiper JS -->
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+
+    
+
+    <script>
+        var swiper3 = new Swiper(".transo-swiper-mobile", {
+            slidesPerView: 1,
+            loop: true,
+
+            spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+
+
+        });
+
+        var swiper2 = new Swiper(".transo-swiper-1", {
+            slidesPerView: 6,
+            loop: true,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            breakpoints: {
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 6,
+                    spaceBetween: 20,
+                },
+            }
+
+        });
+
+    </script>
+
+
+<style>
+    body{background-color: #f5f5f5!important;}
+
+    footer ul li .i-i{color: #edd06c!important;}
+
+
+    #transformation-alert{margin-top: 30px!important;}
+#transformation-alert svg{    font-size: 36px!important;
+    color: red;
+    padding: 0px;
+    margin-top: -2px;}
+    #transformation-alert p{    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    text-indent: 13px;
+    margin-top: 4px;}
+
+
+/* Apply a background image */
+.faq-section {
+    padding: 70px 0;    background: url('images/faq.jpg') 50% 10%/cover no-repeat;
+
+    color: #fff; 
+    height: 500px;
+    opacity: 1!important;
+    position: relative!important;
+}
+
+/* Apply an overlay with an RGBA color */
+.faq-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(54 54 54 / 60%)!important;
+    z-index: 99999!important;
+
+}
+
+/* Style the FAQ container */
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative!important;
+    z-index: 9999999!important;
+}
+
+
+.faq-container h2{    z-index: 99999999!important;
+    position: relative!important; color:white!important}
+
+/* Style the FAQ question and answer items */
+.faq-item {
+    margin: 20px 0;
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+}
+
+/* Bootstrap classes for styling the FAQ items */
+.faq-item h3 {
+    color: #fff;
+}
+
+button.accordion-button{    background: #edd06c!important;
+    color: white!important;}
+
+    .accordion-body {
+    color: black;
+    font-weight: 600;
+    text-align: left;}
+
+    #packages{padding-top: 6.5rem!important;
+    padding-bottom: 6.5rem!important; background-position:bottom!important}
+
+    @media only screen and (max-width: 768px) {
+
+    header.masthead {
+    background-position: 0px!important;}
+}
+
+
+@media only screen and (max-width: 480px) {
+
+header.masthead {
+background-position: 65% 70%!important;}
+}
+
+
+@media only screen and (max-width: 767px) {
+    #packages .item{max-width: 80%!important;
+    margin: auto!important;    min-height: 100%!important;
+    height: 518px;
+    max-height: 100%;}
+    }
+
+    @media only screen and (max-width: 450px) {
+    #packages .item{height: 560px!important}
+    }
+
+
+    @media only screen and (max-width: 350px) {
+    #packages .item{height: 590px!important}
+    }
+
+    @media only screen and (max-width: 1150px) {
+
+#tailored-sec img{padding: 0px!important;}
+
+#customized-sec img{padding: 0px!important;}
+
+#personalized-sec img{padding: 0px!important;}
+
+#tailored-sec h2{margin-top: 36px!important;}
+
+#customized-sec h2{margin-top:36px!important;}
+
+#personalized-sec h2{margin-top: 36px!important;}
+
+    }
+
+
+
+
+    @media only screen and (max-width: 1100px) {
+
+        #customized-sec{padding: 45px!important;}
+
+#personalized-sec {padding: 45px!important;}
+
+
+    }
+
+
+    #packages .item ul li::after{    top: 24%!important}
+    #packages .item:hover {
+    border: none!important;
+}
+
+
+#packages .item{min-height: 485px!important;}
+
+
+
+header.masthead{background-image: url(images/headd.jfif);  padding:0px!important; padding-top: 110px !important; margin:0px auto!important}
+
+  
+
+
+#mainNav .navbar-nav{
+    float: left;
+    right: 0px;
+    margin: 0px auto;}
+
+
+#masthead-phone{background-image: url(images/bg-color.png);}
+
+
+@media only screen and (min-width: 600px) {
+
+    #contact-phone{display: none!important;}
+
+#contactme{display: block!important;}
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #contact-phone{display: block!important;}
+
+#contactme{display: none!important;}
+
+#contact-phone h2{color:white!important}
+
+#contact-phone p{
+
+text-align: center!important;
+  width: 80%!important;
+  margin: auto!important;
+  color: white!important;}
+
+
+  #contact-phone a{
+margin: auto;
+    margin-top: auto;
+  display: table;
+  margin-top: 30px;}
+
+
+  #contact-phone .content{padding: 60px!important;}
+
+
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+
+    #contact-phone .content{padding: 12px!important;}
+
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+header.masthead{margin: 0px auto !important;
+  height: 595px!important;
+  min-height: 100%!important;}
+}
+
+
+@media only screen and (max-width: 500px) {
+
+header.masthead{padding-top: 143px !important;}
+}
+
+
+
+/*
+
+
+@media only screen and (min-width: 1100px) {
+
+#masthead-phone{display: none!important;}
+#headmasthead{display: block!important;}
+}
+@media only screen and (max-width: 1100px) {
+
+    #masthead-phone{display: block!important;}
+    #headmasthead{display: none!important;}
+}
+*/
+
+</style>
+
+
+</body>
+
+</html>

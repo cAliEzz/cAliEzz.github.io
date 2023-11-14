@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1," />
+    <meta name="description" content="" />
+    <meta name="author" content="Magdy" />
+    <title>Alpha team | Ahmed Assem </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="../images/logo-b.png" />
+    <!-- Font Awesome icons (free version)-->
+    <!-- !! No need <link href="/libs/icons/fa-6/all.min.css" rel="stylesheet"> !! No need -->
+    <script src="../libs/icons/fa-6/all.js"></script>
+
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="../libs/swiper/swiper-bundle.min.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="../libs/AOS/aos.css">
+
+    <!--  CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            scroll-behavior: smooth
+        }
+
+
+      
+       
+        #mainNav .dropdown-toggle::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            width: 40%;
+            height: 4px;
+            border-radius: 10px;
+            background-color: #ffc600;
+            transition: all .5s;
+            transform-origin: left;
+            transform: scale(0);
+        }
+        #mainNav .dropdown-toggle.active::after, #mainNav .dropdown-toggle:hover::after {
+            transform: scale(1);
+        }
+
+       
+        .dropdown-toggle {
+            font-size: .95rem;
+            color: #fff;
+            letter-spacing: 1px;
+            position: relative;
+            display: block;
+            padding: .5rem 1rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            text-decoration: none;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+        }
+        @media (max-width: 500px) {
+            .dropdown-toggle {
+                color: #fff;
+                padding-left: 0
+            }
+        }
+            .dropdown-toggle:hover {
+                color: #ffc600;
+            }
+        .dropdown-item {
+            
+            padding: 0.6rem 1rem;
+            
+        }
+    </style>
+
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '331881462522886');
+        fbq('track', 'PageView');
+        fbq('track', 'Purchase', { value: 0.00, currency: 'USD' });
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=331881462522886&ev=PageView&noscript=1" />
+    </noscript>
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="CalorieCalculator.html#page-top">
+                <img src="../images/logo-w.png" style="transform: scale(1.7);" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2" href="../index.html#packages">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2" href="../index.html#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2"
+                           href="../index.html#transformation">transformation</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="bg-transparent border-0  dropdown-toggle text-capitalize fw-normal fm-pop" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                            <span style="margin-inline-start:5px" class="fa fa-chevron-down"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="Workouts.html">
+                                    Workouts
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="FAQs.html">
+                                    FAQs
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Recipes.html">
+                                    Recipes
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Substitutions.html">
+                                    Substitution
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                   
+                    <li class="nav-item"><a class="nav-link text-capitalize fw-normal fm-pop" href="../index.html#FAQs">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+
+<!-- hero -->
+<!-- start -->
+<section style="padding-top: 150px !important;"
+         class="min-vh-100 overflow-hidden d-flex position-relative align-items-center justify-content-center hero-calc">
+    <img src="../images/you-have-bg.png" class="position-absolute " style="left: 0;
+    width: 500px;
+    height: 500px;
+    object-fit: contain;" alt="background-image">
+    <div style="max-width: 800px;background-color: #5959598c;" class="calc-outer-wrap card">
+        <form class="calc-form rounded-3 card-body p-4 " id="calc-form">
+            <h3 class="text-center text-uppercase fw-bolder mb-4 text-white display-4 fm-pop">
+                Calorie Calculator
+            </h3>
+            <div class="container">
+
+                <div class="stepwizard d-none w-100">
+                    <div class="stepwizard-row setup-panel ">
+                        <div class="stepwizard-step">
+                            <a href="CalorieCalculator.html#step-1" style="background-color: #000;color: #fff;" type="button"
+                               class="btn btn-primary btn-circle border-white border  ">1</a>
+                        </div>
+                        <div class="stepwizard-step">
+                            <a href="CalorieCalculator.html#step-2" style="background-color: #000;color: #fff;" type="button"
+                               class="btn btn-default btn-circle border-white border  " disabled="disabled">2</a>
+                        </div>
+                        <div class="stepwizard-step">
+                            <a href="CalorieCalculator.html#step-3" style="background-color: #000;color: #fff;" type="button"
+                               class="btn btn-default btn-circle border-white border  " disabled="disabled">3</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <form id="calc-form" class="mt-4 text-white">
+                    <div class="row setup-content" id="step-1">
+                        <div class="col-xs-6 col-md-offset-3">
+                            <div class="col-md-12">
+                                <!-- ?? form -->
+
+                                <div class="form-group text-white">
+                                    <label class="mb-2" for="">
+                                        Gender:
+                                    </label>
+                                    <div class="row row-cols-2">
+                                        <div style="padding-right: 8px !important;">
+                                            <div class="custom-control my-radio border border-white  rounded-pill mb-2 position-relative custom-radio">
+                                                <input type="radio" id="genderRadio1" name="genderRadio" value="MALE"
+                                                       class="custom-control-input " checked>
+                                                <label class="custom-control-label " for="genderRadio1">
+                                                    Male
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div style="padding-left: 8px !important;">
+                                            <div class="custom-control my-radio border border-white  rounded-pill mb-2 position-relative custom-radio">
+                                                <input type="radio" id="genderRadio2" name="genderRadio" value="FEMALE"
+                                                       class="custom-control-input ">
+                                                <label class="custom-control-label " for="genderRadio2">Female</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="control-label text-white mb-2">Age:</label>
+                                    <input required maxlength="200" type="number" id="AGEINPUT" class="form-control"
+                                           placeholder="EX: 27">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="control-label text-white mb-2">Weight(KG):</label>
+                                    <input required maxlength="200" type="number" id="WEIGHTInput" class="form-control"
+                                           placeholder="EX: 80">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label text-white mb-2">Height(CM):</label>
+                                    <input required maxlength="200" type="number" id="HEIGHTInput" class="form-control"
+                                           placeholder="EX: 185">
+                                </div>
+                                <!-- ?? form -->
+                                <button class="btn btn-dark bg-black btn-block w-100 mt-3 btn-rounded rounded-pill nextBtn "
+                                        type="button" style="padding: 10px !important;margin-top: 25px !important;">
+                                    Next
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setup-content" id="step-2">
+                        <div class="col-xs-6 col-md-offset-3">
+                            <div class="col-md-12">
+
+                                <!-- ?? form -->
+
+                                <div class="form-group text-white mb-3">
+                                    <label class="mb-2" for="">
+                                        The number of exercise times during the week:
+                                    </label>
+                                    <div class="row g-3  row-cols-md-2 ">
+                                        <div style="padding: 0 8px !important;margin-bottom: 15px !important;">
+                                            <div class="custom-control my-radio border border-white  rounded-pill mb-2 position-relative custom-radio">
+                                                <input type="radio" id="exTimes0" name="exTimes" value="0T" class="custom-control-input "
+                                                       checked>
+                                                <label class="custom-control-label " for="exTimes0">
+                                                    little or no exercise
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div style="padding: 0 8px !important;margin-bottom: 15px !important;">
+                                            <div class="custom-control my-radio border border-white  rounded-pill mb-2 position-relative custom-radio">
+                                                <input type="radio" id="exTimes1" name="exTimes" value="13T" class="custom-control-input "
+                                                       checked>
+                                                <label class="custom-control-label " for="exTimes1">
+                                                    1 - 3 times
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div style="padding: 0 8px !important;margin-bottom: 15px !important;">
+                                            <div class="custom-control my-radio border border-white  rounded-pill mb-2 position-relative custom-radio">
+                                                <input type="radio" id="exTimes2" name="exTimes" value="35T" class="custom-control-input ">
+                                                <label class="custom-control-label " for="exTimes2">
+                                                    3 - 5 times
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div style="padding: 0 8px !important;margin-bottom: 15px !important;">
+                                            <div class="custom-control my-radio border border-white  rounded-pill mb-2 position-relative custom-radio">
+                                                <input type="radio" id="exTimes3" name="exTimes" value="57T" class="custom-control-input ">
+                                                <label class="custom-control-label " for="exTimes3">
+                                                    5 - 7 times
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div style="padding: 0 8px !important;margin-bottom: 15px !important;">
+                                            <div class="custom-control my-radio border border-white  rounded-pill mb-2 position-relative custom-radio">
+                                                <input type="radio" id="exTimes4" name="exTimes" value="67T" class="custom-control-input ">
+                                                <label class="custom-control-label " for="exTimes4">
+                                                    intense exercise 6-7 per week
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- ?? form -->
+                                <button class="btn btn-dark bg-black btn-block w-100 mt-3 btn-rounded rounded-pill nextBtn "
+                                        type="button" id="calcBtn" style="padding: 12px !important;">
+                                    Calc
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row setup-content" id="step-3">
+                        <div class="col-xs-6 mt-3 col-md-offset-3">
+                            <div id="results" class="col-md-12">
+                                <div id="results_div">
+                                    <div class="border-start border-warning ps-2 border-4">
+                                        <h1 class="text-white fw-bolder text-start text-uppercase mb-1">
+                                            Calories per day to maintain your
+                                            weight
+                                        </h1>
+                                        <h1 id="allCalRes" class="text-start text-warning mb-3 display-5 fw-light fm-pop"
+                                            style="margin-bottom: 40px !important;"></h1>
+                                    </div>
+
+                                    <h3 id="MildWeight" class="text-start text-white mb-3 display-5 fw-light fm-pop"
+                                        style="margin-bottom: 40px !important;"></h3>
+
+                                    <h3 id="LossWeight" class="text-start text-white mb-3 display-5 fw-light fm-pop"
+                                        style="margin-bottom: 40px !important;"></h3>
+
+                                    <h3 id="ExtremeWeight" class="text-start text-white mb-3 display-5 fw-light fm-pop"
+                                        style="margin-bottom: 40px !important;"></h3>
+
+
+
+
+
+                                </div>
+                                <div id="form-error" class="alert alert-warning" style="display:none;"></div>
+                                <div class="row row-cols-2 g-2" style="margin-top: 20px !important;">
+                                    <div style="padding: 0 10px !important;">
+                                        <button class="btn btn-dark bg-black btn-block w-100  btn-rounded rounded-pill  " type="button"
+                                                onclick="location.reload()" style="padding: 10px !important;">
+                                            Re-calc
+                                        </button>
+                                    </div>
+                                    <div style="padding: 0 10px !important;">
+                                        <a href="../index.html" class="btn btn-light btn-block w-100  btn-rounded rounded-pill " type="button"
+                                           style="padding: 10px !important;">
+                                            To
+                                            home
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+        </form>
+    </div><!--  /.calc-outer-wrap -->
+</section>
+<!-- end -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <img src="../images/ahmedassemlogo.png" alt="logo" style="width: 130px;padding: 0">
+                <h4 class="text-uppercase mb-0 text-white display-4">AHMED ASEM</h4>
+            </div>
+            <div class="w-100 mb-1 d-flex justify-content-center align-items-center gap-1 flex-wrap">
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/1.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/2.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/3.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/4.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/5.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/6.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/7.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/8.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/9.png" class="" />
+                    </div>
+
+              
+            </div>
+            <ul>
+
+                <li class="text-center">
+                    <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/dr_ahmedassem/">
+                        <i class="fa-brands fa-instagram i-i"></i>
+                    </a>
+                    <a class="text-decoration-none" target="_blank" href="https://wa.me/message/46IX77T3U6NTK1">
+                        <i class="fa-brands fa-whatsapp i-i"></i>
+                    </a>
+                    <a class="text-decoration-none" target="_blank" href="https://www.youtube.com/@Dr_ahmedassem/featured">
+                        <i class="fa-brands fa-youtube i-i"></i>
+                    </a>
+                    <a class="text-decoration-none" target="_blank" href="https://www.facebook.com/Dr.AhmedAssem1">
+                        <i class="fa-brands fa-facebook i-i"></i>
+                    </a>
+                    <a class="text-decoration-none" target="_blank" href="https://www.tiktok.com/@dr_ahmedassem">
+                        <i class="fa-brands fa-tiktok i-i"></i>
+                    </a>
+
+
+
+
+                </li>
+                <li class="mt-1">
+                    &copy; Copyright 2023 <span class="text-primary">ALPHA T</span>. All right reserved.<br>Privacy
+                    Policy | Terms and Conditions
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- jquery js -->
+    <!--<script src="~/lib/jquery/jquery-3.6.3.min.js"></script>-->
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="../libs/bs-5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Core theme JS-->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- AOS JS -->
+    <script src="../libs/AOS/aos.js"></script>
+    <script>AOS.init(
+    {
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 50, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+
+
+    }    );</script>
+
+    <!-- swiper JS -->
+    <script src="../libs/swiper/swiper-bundle.min.js"></script>
+
+    
+    <!-- jquery js -->
+    <script src="../libs/jquery/jquery-3.6.3.min.js"></script>
+    <!-- calc JS -->
+    <script src="../assets/js/calc.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var navListItems = $('div.setup-panel div a'),
+                allWells = $('.setup-content'),
+                allNextBtn = $('.nextBtn'),
+                allPrevBtn = $('.prevBtn');
+
+            allWells.hide();
+
+            navListItems.click(function (e) {
+                e.preventDefault();
+                var $target = $($(this).attr('href')),
+                    $item = $(this);
+
+                if (!$item.hasClass('disabled')) {
+                    navListItems.removeClass('btn-primary bg-white text-dark').addClass('btn-default');
+                    $item.addClass('btn-primary').addClass('bg-white text-dark');
+                    allWells.hide();
+                    $target.show();
+                    $target.find('input:eq(0)').focus();
+                }
+            });
+
+
+
+            allNextBtn.click(function () {
+                var curStep = $(this).closest(".setup-content"),
+                    curStepBtn = curStep.attr("id"),
+                    nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+                    curInputs = curStep.find("input[type='number'],input[type='url']"),
+                    isValid = true;
+
+                $(".form-group").removeClass("has-error");
+                for (var i = 0; i < curInputs.length; i++) {
+                    if (!curInputs[i].validity.valid) {
+                        isValid = false;
+                        $(curInputs[i]).closest(".form-group").addClass("has-error");
+                    }
+                }
+
+                if (isValid)
+                    nextStepWizard.removeAttr('disabled').trigger('click');
+            });
+
+            $('div.setup-panel div a.btn-primary').trigger('click');
+        });
+
+
+
+    </script>
+
+
+</body>
+
+</html>

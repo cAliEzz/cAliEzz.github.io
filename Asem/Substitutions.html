@@ -1,0 +1,570 @@
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1," />
+    <meta name="description" content="" />
+    <meta name="author" content="Magdy" />
+    <title>Alpha team | Ahmed Assem </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="../images/logo-b.png" />
+    <!-- Font Awesome icons (free version)-->
+    <!-- !! No need <link href="/libs/icons/fa-6/all.min.css" rel="stylesheet"> !! No need -->
+    <script src="../libs/icons/fa-6/all.js"></script>
+
+    <!--  CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            scroll-behavior: smooth
+        }
+
+        #mainNav .dropdown-toggle::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            width: 40%;
+            height: 4px;
+            border-radius: 10px;
+            background-color: #ffc600;
+            transition: all .5s;
+            transform-origin: left;
+            transform: scale(0);
+        }
+
+        #mainNav .dropdown-toggle.active::after, #mainNav .dropdown-toggle:hover::after {
+            transform: scale(1);
+        }
+
+
+        .dropdown-toggle {
+            font-size: .95rem;
+            color: #fff;
+            letter-spacing: 1px;
+            position: relative;
+            display: block;
+            padding: .5rem 1rem;
+            color:#000;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            text-decoration: none;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+        }
+
+        @media (max-width: 500px){
+            .dropdown-toggle{
+                color:#fff;
+                padding-left: 0
+            }
+        }
+
+            .dropdown-toggle:hover {
+                color: #ffc600;
+            }
+        .dropdown-item {
+            padding: 0.6rem 1rem;
+        }
+
+        #mainNav .navbar-nav .nav-item .nav-link {
+            color: #000;
+        }
+
+        #mainNav .navbar-collapse.show .navbar-nav .nav-item .nav-link,
+        #mainNav .navbar-collapse.collapsing .navbar-nav .nav-item .nav-link {
+            color: #fff;
+        }
+
+        #mainNav, .navbar-brand {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            display: block
+        }
+
+        .brand, #mainNav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        input, select {
+            height: 48px;
+            background: #fff;
+            border-radius: 6px;
+            border: none !important
+        }
+
+        .result {
+            padding: 20px;
+            background: #fff;
+            border-radius: 6px;
+        }
+    </style>
+
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '331881462522886');
+        fbq('track', 'PageView');
+        fbq('track', 'Purchase', { value: 0.00, currency: 'USD' });
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=331881462522886&ev=PageView&noscript=1" />
+    </noscript>
+</head>
+<body id="page-top" class="bg-white">
+    <!-- Navigation-->
+    <!-- hero -->
+    <!-- start -->
+    <section class="d-flex flex-wrap h-100 min-vh-100 p-0">
+        <div class="col-lg-4 col-12 order-1 order-lg-0 bg-dark">
+            <div class="d-flex flex-wrap position-relative h-100">
+                <div class="text-center brand  w-100 ">
+                    <a class="navbar-brand m-0" href="Substitutions.html#page-top">
+                        <img src="../images/logo-w.png" style="height: 50px" alt="logo" />
+                    </a>
+                </div>
+                <div class="text-center w-100 align-self-center">
+                    <h1 class="text-white display-3 mb-0 text-uppercase">
+                        start your
+                        journey <span class="text-primary">now</span>
+                    </h1>
+                    <p class="text-white fs-4 fw-bold text-uppercase">
+                        BECOME ONE OF THE <span class="text-primary">ALPHA</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-12 order-0 order-lg-1" style="background: #F5F5F5">
+
+            <div class="d-flex flex-wrap position-relative p-1 p-md-0 h-100">
+                <nav class="navbar  navbar-expand-lg navbar-dark" id="mainNav">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            Menu
+                            <i class="fas fa-bars ms-1"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav text-uppercase mx-auto py-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize fw-normal fm-pop " href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize fw-normal fm-pop " href="../index.html#packages">Packages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize fw-normal fm-pop " href="../index.html#features">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize fw-normal fm-pop "
+                                       href="../index.html#transformation">transformation</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <button class="bg-transparent border-0  dropdown-toggle text-capitalize fw-normal fm-pop" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Services
+                                        <span style="margin-inline-start:5px" class="fa fa-chevron-down"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="Workouts.html">
+                                                Workouts
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="FAQs.html">
+                                                FAQs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="Recipes.html">
+                                                Recipes
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="Substitutions.html">
+                                                Substitution
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item"><a class="nav-link text-capitalize fw-normal fm-pop" href="FAQs.html">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <form style="max-width:500px" id="form" class="text-center py-3 mx-auto w-100 align-self-center">
+                    <h1 class="text-black display-3 mb-1 text-uppercase">
+                        Substitution
+                    </h1>
+                    <div class="row row-cols-1 row-cols-md-2" style="row-gap: 10px">
+                        <div>
+                            <select required class="form-select" id="select_menu" aria-label="Default select example">
+                                <option value="" selected>
+                                    Choose..
+                                </option>
+
+
+                            </select>
+
+                        </div>
+                        <div>
+                            <div class="input-group">
+                                <input required pattern="^[0-9]*$" maxlength="3" max="999" type="number" class="form-control"
+                                       id="count" placeholder="e.g. 100">
+                                <div class="input-group-append bg-white" style="height: 48px;">
+                                    <span class="input-group-text bg-transparent h-100 border-0 text-muted" id="unit_view">gm</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="result" style="display: none" class="result mt-1">
+
+                    </div>
+                    <button class="btn w-100 mt-1 btn-dark bg-black">
+                        Submit
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+    <!-- jquery js -->
+    <script src="../libs/jquery/jquery-3.6.3.min.js"></script>
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="../libs/bs-5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Core theme JS-->
+
+    <script>
+        const meals = [
+            {
+                title: 'chicken breasts',
+                type: "Proteins",
+                equalHundred: 320
+            },
+            {
+                title: 'lean beef',
+                type: "Proteins",
+                equalHundred: 300
+            },
+            {
+                title: 'beef liver',
+                type: "Proteins",
+                equalHundred: 340
+            },
+            {
+                title: 'white fish',
+                type: "Proteins",
+                equalHundred: 370
+            },
+            {
+                title: 'tuna',
+                type: "Proteins",
+                equalHundred: 410
+            },
+            {
+                title: 'shrimp',
+                type: "Proteins",
+                equalHundred: 480
+            },
+            {
+                title: 'turkey breast',
+                type: "Proteins",
+                equalHundred: 330
+            },
+            {
+                title: 'whey protein',
+                type: "Proteins",
+                equalHundred: 4,
+                unit: "Scoops"
+            },
+            {
+                title: 'egg whites',
+                type: "Proteins",
+                equalHundred: 27,
+                unit: 'Number'
+
+            },
+            {
+                title: 'whole eggs',
+                type: "Proteins",
+                equalHundred: 10,
+                unit: 'Number'
+            },
+            {
+                title: 'basmati rice',
+                type: "High GI Carbohydrates",
+                equalHundred: 350,
+                unit: 'gm'
+            },
+            {
+                title: 'Egyptian rice',
+                type: "High GI Carbohydrates",
+                equalHundred: 180,
+                unit: 'gm'
+            },
+            {
+                title: 'cream of rice',
+                type: "High GI Carbohydrates",
+                equalHundred: 180,
+                unit: 'gm'
+            },
+            {
+                title: 'grilled potatoes',
+                type: "High GI Carbohydrates",
+                equalHundred: 440,
+                unit: 'gm'
+            },
+            {
+                title: 'sweet potatoes',
+                type: "High GI Carbohydrates",
+                equalHundred: 470,
+                unit: 'gm'
+            },
+            {
+                title: 'pasta',
+                type: "High GI Carbohydrates",
+                equalHundred: 120,
+                unit: 'gm'
+            },
+            {
+                title: 'brown toast',
+                type: "Low GI and Snacks Carbohydrates",
+                equalHundred: 7,
+                unit: 'slices'
+            },
+            {
+                title: 'corn flakes',
+                type: "Low GI and Snacks Carbohydrates",
+                equalHundred: 110,
+                unit: 'gm'
+            },
+            {
+                title: 'oats',
+                type: "Low GI and Snacks Carbohydrates",
+                equalHundred: 130,
+                unit: 'gm'
+            },
+            {
+                title: 'corn tortilla',
+                type: "Low GI and Snacks Carbohydrates",
+                equalHundred: 4,
+                unit: 'gm'
+            },
+            {
+                title: 'rice cake',
+                type: "Low GI and Snacks Carbohydrates",
+                equalHundred: 120,
+                unit: 'gm'
+            },
+            {
+                title: 'green peas',
+                type: "Vegetables",
+                equalHundred: 120,
+                unit: 'gm'
+            },
+            {
+                title: 'zucchini',
+                type: "Vegetables",
+                equalHundred: 550,
+                unit: 'gm'
+            },
+            {
+                title: 'green beans',
+                type: "Vegetables",
+                equalHundred: 250,
+                unit: 'gm'
+            },
+            {
+                title: 'asparagus',
+                type: "Vegetables",
+                equalHundred: 360,
+                unit: 'gm'
+            },
+            {
+                title: 'cucumber',
+                type: "Vegetables",
+                equalHundred: 550,
+                unit: 'gm'
+            },
+            {
+                title: 'mushroom',
+                type: "Vegetables",
+                equalHundred: 300,
+                unit: 'gm'
+            },
+            {
+                title: 'lettuce',
+                type: "Vegetables",
+                equalHundred: 500,
+                unit: 'gm'
+            },
+            {
+                title: 'bell pepper',
+                type: "Vegetables",
+                equalHundred: 320,
+                unit: 'gm'
+            },
+            {
+                title: 'tomatoes',
+                type: "Vegetables",
+                equalHundred: 500,
+                unit: 'gm'
+            },
+            {
+                title: 'carrot',
+                type: "Vegetables",
+                equalHundred: 240,
+                unit: 'gm'
+            },
+            {
+                title: 'bananas',
+                type: "Fruits",
+                equalHundred: 1.8,
+                unit: 'gm'
+            },
+            {
+                title: 'apples',
+                type: "Fruits",
+                equalHundred: 3,
+                unit: 'gm'
+            },
+            {
+                title: 'pomegranate',
+                type: "Fruits",
+                equalHundred: 110,
+                unit: 'gm'
+            },
+            {
+                title: 'oranges',
+                type: "Fruits",
+                equalHundred: 3,
+                unit: 'gm'
+            },
+            {
+                title: 'watermelon',
+                type: "Fruits",
+                equalHundred: 300,
+                unit: 'gm'
+            },
+            {
+                title: 'strawberry',
+                type: "Fruits",
+                equalHundred: 300,
+                unit: 'gm'
+            },
+            {
+                title: 'kiwi',
+                type: "Fruits",
+                equalHundred: 3,
+                unit: 'gm'
+            },
+            {
+                title: 'cottage cheese',
+                type: "Dairy",
+                equalHundred: 900,
+                unit: 'gm'
+            },
+            {
+                title: 'greek yogurt',
+                type: "Dairy",
+                equalHundred: 4,
+                unit: 'CUP'
+            }
+        ];
+
+        meals.sort((a, b) => a.title > b.title).forEach(e => {
+            $('#select_menu').append(`
+                                      <option  value="${e.title}">
+                                         ${e?.title?.toUpperCase()}
+                                      </option>`);
+
+        })
+
+        $('#select_menu').on('change', function (event) {
+            const selectedMeal = $('#select_menu').val();
+            const filteredMeal = meals.find(e => e.title.includes(selectedMeal));
+            const unit = getUnit(filteredMeal.unit);
+            $('#unit_view').text(unit);
+
+        })
+
+        $('#form').on('submit', function (e) {
+            e.preventDefault();
+            const subs = [];
+            const selectedMeal = $('#select_menu').val();
+            const enteredValue = $('#count').val();
+            const filteredMeal = meals.find(e => e.title.includes(selectedMeal));
+            const sameTypeMeals = meals.filter(e => e.type === filteredMeal.type && e.title !== filteredMeal.title);
+
+            const effectiveEnergy = ((enteredValue * 100) / filteredMeal.equalHundred);
+            sameTypeMeals.forEach(e => {
+                subs.push({
+                    title: e.title,
+                    unit: e.unit || 'gm',
+                    value: Math.floor(effectiveEnergy * e.equalHundred / 100),
+                })
+
+            });
+
+            $('#result').empty();
+            subs.forEach(e => {
+                let unit = getUnit(e.unit);
+
+                $('#result').append(`<p class="text-start text-muted fw-bold">- ${e.value}${unit}  ${e.title}</p>`)
+            });
+            $('#result').show();
+
+
+
+        })
+
+        function getUnit(unit) {
+            switch (unit) {
+                case 'gm':
+                    return 'gm';
+                    break;
+                case 'Number':
+                    return 'Piece(s)';
+                    break;
+                case 'Scoops':
+                    return 'gm';
+                    break;
+                case 'slices':
+                    return 'slice(s)';
+                    break;
+                case 'CUP':
+                    return 'cup(s)';
+                    break;
+
+                default:
+                    return 'gm'
+            }
+        }
+    </script>
+
+</body>
+
+</html>

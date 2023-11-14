@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1," />
+    <meta name="description" content="" />
+    <meta name="author" content="Magdy" />
+    <title>Alpha team | Ahmed Assem </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="../images/logo-b.png" />
+    <!-- Font Awesome icons (free version)-->
+    <!-- !! No need <link href="/libs/icons/fa-6/all.min.css" rel="stylesheet"> !! No need -->
+    <script src="../libs/icons/fa-6/all.js"></script>
+
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="../libs/swiper/swiper-bundle.min.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="../libs/AOS/aos.css">
+
+    <!--  CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            scroll-behavior: smooth
+        }
+
+
+      
+       
+        #mainNav .dropdown-toggle::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            width: 40%;
+            height: 4px;
+            border-radius: 10px;
+            background-color: #ffc600;
+            transition: all .5s;
+            transform-origin: left;
+            transform: scale(0);
+        }
+        #mainNav .dropdown-toggle.active::after, #mainNav .dropdown-toggle:hover::after {
+            transform: scale(1);
+        }
+
+       
+        .dropdown-toggle {
+            font-size: .95rem;
+            color: #fff;
+            letter-spacing: 1px;
+            position: relative;
+            display: block;
+            padding: .5rem 1rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            text-decoration: none;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+        }
+        @media (max-width: 500px) {
+            .dropdown-toggle {
+                color: #fff;
+                padding-left: 0
+            }
+        }
+            .dropdown-toggle:hover {
+                color: #ffc600;
+            }
+        .dropdown-item {
+            
+            padding: 0.6rem 1rem;
+            
+        }
+    </style>
+
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '331881462522886');
+        fbq('track', 'PageView');
+        fbq('track', 'Purchase', { value: 0.00, currency: 'USD' });
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=331881462522886&ev=PageView&noscript=1" />
+    </noscript>
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="FAQs.html#page-top">
+                <img src="../images/logo-w.png" style="transform: scale(1.7);" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2" href="../index.html#packages">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2" href="../index.html#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-normal fm-pop me-2"
+                           href="../index.html#transformation">transformation</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="bg-transparent border-0  dropdown-toggle text-capitalize fw-normal fm-pop" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                            <span style="margin-inline-start:5px" class="fa fa-chevron-down"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="Workouts.html">
+                                    Workouts
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="FAQs.html">
+                                    FAQs
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Recipes.html">
+                                    Recipes
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Substitutions.html">
+                                    Substitution
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                   
+                    <li class="nav-item"><a class="nav-link text-capitalize fw-normal fm-pop" href="../index.html#FAQs">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+
+<!-- hero -->
+<!-- start -->
+<section style="padding-top: 150px !important;"
+         class="min-vh-100 overflow-hidden d-flex position-relative align-items-center justify-content-center bg-dark">
+    <img src="../images/you-have-bg.png" class="position-absolute " style="left: 0;
+    width: 500px;
+    height: 500px;
+    object-fit: contain;" alt="background-image">
+    <div>
+        <div class="text-center">
+            <h1 class="text-primary text-uppercase">
+                For clients only
+
+            </h1>
+            <p class="text-white">
+                You can contact us for more details
+            </p>
+            <a href="https://wa.me/message/46IX77T3U6NTK1" target="_blank" class="btn btn-lg btn-primary">
+                <span class="fab fa-whatsapp"></span>
+                Contact us
+            </a>
+        </div>
+    </div>
+</section>
+<!-- end -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <img src="../images/ahmedassemlogo.png" alt="logo" style="width: 130px;padding: 0">
+                <h4 class="text-uppercase mb-0 text-white display-4">AHMED ASEM</h4>
+            </div>
+            <div class="w-100 mb-1 d-flex justify-content-center align-items-center gap-1 flex-wrap">
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/1.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/2.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/3.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/4.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/5.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/6.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/7.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/8.png" class="" />
+                    </div>
+                    <div class="col text-center">
+                        <img style="max-width:100px" src="../assets/images/sponsers/9.png" class="" />
+                    </div>
+
+              
+            </div>
+            <ul>
+
+                <li class="text-center">
+                    <a class="text-decoration-none" target="_blank" href="https://www.instagram.com/dr_ahmedassem/">
+                        <i class="fa-brands fa-instagram i-i"></i>
+                    </a>
+                    <a class="text-decoration-none" target="_blank" href="https://wa.me/message/46IX77T3U6NTK1">
+                        <i class="fa-brands fa-whatsapp i-i"></i>
+                    </a>
+                    <a class="text-decoration-none" target="_blank" href="https://www.youtube.com/@Dr_ahmedassem/featured">
+                        <i class="fa-brands fa-youtube i-i"></i>
+                    </a>
+                    <a class="text-decoration-none" target="_blank" href="https://www.facebook.com/Dr.AhmedAssem1">
+                        <i class="fa-brands fa-facebook i-i"></i>
+                    </a>
+                    <a class="text-decoration-none" target="_blank" href="https://www.tiktok.com/@dr_ahmedassem">
+                        <i class="fa-brands fa-tiktok i-i"></i>
+                    </a>
+
+
+
+
+                </li>
+                <li class="mt-1">
+                    &copy; Copyright 2023 <span class="text-primary">ALPHA T</span>. All right reserved.<br>Privacy
+                    Policy | Terms and Conditions
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- jquery js -->
+    <!--<script src="~/lib/jquery/jquery-3.6.3.min.js"></script>-->
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="../libs/bs-5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Core theme JS-->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- AOS JS -->
+    <script src="../libs/AOS/aos.js"></script>
+    <script>AOS.init(
+    {
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 50, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+
+
+    }    );</script>
+
+    <!-- swiper JS -->
+    <script src="../libs/swiper/swiper-bundle.min.js"></script>
+
+    
+
+</body>
+
+</html>
